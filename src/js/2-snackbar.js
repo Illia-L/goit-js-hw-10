@@ -1,5 +1,5 @@
-require('../img/icon-error.svg')
-require('../img/icon-success.svg')
+  import '../img/icon-success.svg'
+  import '../img/icon-error.svg'
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -38,10 +38,8 @@ function showMessage(status, delay) {
   const message = status
     ? `Fulfilled promise in ${delay}ms`
     : `Rejected promise in ${delay}ms`;
-  const iconUrl = status
-    ? '../img/icon-success.svg'
-    : '../img/icon-error.svg';
-  const backgroundColor = status ? '#59A10D':'#EF4040'
+  const iconUrl = status ? '../img/icon-success.svg' : '../img/icon-error.svg';
+  const backgroundColor = status ? '#59A10D' : '#EF4040';
 
   iziToast.show({
     position: 'topRight',
