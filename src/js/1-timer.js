@@ -64,7 +64,7 @@ function showMessage() {
     messageSize: '16px',
     messageLineHeight: '24px',
     messageColor: 'white',
-    iconUrl : '/img/icon-error.svg',
+    iconUrl : '../img/icon-error.svg',
     backgroundColor: '#EF4040',
   });
 }
