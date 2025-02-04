@@ -1,6 +1,3 @@
-  import '../img/icon-success.svg'
-  import '../img/icon-error.svg'
-
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/custom-easytoast.css';
