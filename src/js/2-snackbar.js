@@ -36,8 +36,8 @@ function showMessage(status, delay) {
     ? `Fulfilled promise in ${delay}ms`
     : `Rejected promise in ${delay}ms`;
   const iconUrl = status
-    ? '../img/icon-success.svg'
-    : '../img/icon-error.svg';
+    ? '/img/icon-success.svg'
+    : '/img/icon-error.svg';
   const backgroundColor = status ? '#59A10D':'#EF4040'
 
   iziToast.show({
