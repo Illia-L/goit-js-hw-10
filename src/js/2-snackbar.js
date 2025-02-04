@@ -1,3 +1,6 @@
+require('../img/icon-error.svg')
+require('../img/icon-success.svg')
+
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/custom-easytoast.css';
