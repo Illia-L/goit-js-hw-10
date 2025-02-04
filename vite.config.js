@@ -11,6 +11,7 @@ export default defineConfig(({ command }) => {
     },
     root: 'src',
     build: {
+      assetsInclude: ['icon-error.svg', 'icon-success.svg'],
       sourcemap: true,
       rollupOptions: {
         input: glob.sync('./src/*.html'),
