@@ -3,6 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/customize-libraries.css';
+import pathErrorIcon from "../img/icon-error.svg";
 
 const dateInput = document.getElementById('datetime-picker');
 const startBtn = document.querySelector('[data-start]');
@@ -64,7 +65,7 @@ function showMessage() {
     messageSize: '16px',
     messageLineHeight: '24px',
     messageColor: 'white',
-    iconUrl : '../img/icon-error.svg',
+    iconUrl : pathErrorIcon,
     backgroundColor: '#EF4040',
   });
 }
