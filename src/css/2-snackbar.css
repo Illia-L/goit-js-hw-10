@@ -13,6 +13,13 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 48px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
 button {
   all: unset;
 }
