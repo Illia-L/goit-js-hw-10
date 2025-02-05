@@ -1,6 +1,10 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/custom-easytoast.css';
+import pathSuccessIcon from "../img/icon-success.svg";
+import pathErrorIcon from "../img/icon-error.svg";
+
+const iconUrl = status ? pathSuccessIcon : pathErrorIcon
 
 const form = document.querySelector('.form');
 const delayInput = document.querySelector('input[name="delay"]');
@@ -35,7 +39,7 @@ function showMessage(status, delay) {
   const message = status
     ? `Fulfilled promise in ${delay}ms`
     : `Rejected promise in ${delay}ms`;
-  const iconUrl = status ? '../img/icon-success.svg' : '../img/icon-error.svg';
+  const iconUrl = status ? pathSuccessIcon : pathErrorIcon;
   const backgroundColor = status ? '#59A10D' : '#EF4040';
 
   iziToast.show({
